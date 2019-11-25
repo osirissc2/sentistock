@@ -7,8 +7,8 @@ import csv
 
 def main(args):
   load_dotenv()
-  auth = tweepy.OAuthHandler(os.getenv("CONSUMER_KEY"), os.getenv("CONSUMER_SECRET"))
-  auth.set_access_token(os.getenv("ACCESS_TOKEN"), os.getenv("ACCESS_TOKEN_SECRET"))
+  auth = tweepy.OAuthHandler(os.getenv("TWITTER_CONSUMER_KEY"), os.getenv("TWITTER_CONSUMER_SECRET"))
+  auth.set_access_token(os.getenv("TWITTER_ACCESS_TOKEN"), os.getenv("TWITTER_ACCESS_TOKEN_SECRET"))
 
   api = tweepy.API(auth)
   user = api.get_user(args.username)
@@ -35,7 +35,7 @@ def main(args):
 
 
 if __name__ == '__main__':
-  parser = argparse.ArgumentParser(description='Process some integers.')
+  parser = argparse.ArgumentParser(description='Download tweets for a user')
   parser.add_argument('username', type=str,
                       help='Username to crawl')
   parser.add_argument('--start', type=str,
