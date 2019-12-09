@@ -7,13 +7,13 @@ Social media sentiment to stock market volatility
 ## TODO
 Understand Code Piple
 - [x] StockDataSaver.py + News Processing + Top tweet data gets the data and cleans it a bit
-- [ ] Sentiment Maker updates files with sentiment scores
-- [ ] Output Gen processes stock data into things to predict
+- [x] Sentiment Maker updates files with sentiment scores
+- [x] Output Gen processes stock data into things to predict
 - [ ] Correlation Check and ML are analytics
 
 Code Updates
 - [ ] Clean the pipeline
-- [ ] Bucket processing (combine weekends with Friday)
+- [x] Bucket processing (combine weekends with Friday)
 - [ ] More recent data for twitter and news (the data is all stale)
 - [ ] Higher granularity stock data
 - [ ] Create smarter Hueristics for Twitter (including influence)
