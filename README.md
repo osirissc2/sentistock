@@ -9,7 +9,8 @@ Understand Code Piple
 - [x] StockDataSaver.py + News Processing + Top tweet data gets the data and cleans it a bit
 - [x] Sentiment Maker updates files with sentiment scores
 - [x] Output Gen processes stock data into things to predict
-- [ ] Correlation Check and ML are analytics
+- [x] Feature builder and data collection
+- [x] Correlation Check and ML are analytics
 
 Code Updates
 - [ ] Clean the pipeline
